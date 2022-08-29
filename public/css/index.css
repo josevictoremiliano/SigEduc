@@ -1,0 +1,39 @@
+main{
+    height: 100vh;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    background: #FFFFFF;
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    width: 19em;
+    height: 3em;
+    padding: 0.5em;
+}
+input:focus{
+    background: #FFFFFF;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    width: 19em;
+    height: 3em;
+    padding: 0.5em;
+}
+.entrar{
+    width: 261.71px;
+    height: 48px;
+}
+
+.esqueci-a-senha{
+    color: #02812C;
+    margin-top: 1em;
+    
+}
+
+footer{
+    background-color: #009245;
+    display: flex;
+    justify-content: end;
+}
