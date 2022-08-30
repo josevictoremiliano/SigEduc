@@ -33,8 +33,8 @@
     </header>
     <main class="p-5  d-flex flex-column justify-content-center align-items-center">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-8">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-12 col-md-6">
                     <div class="card">
                         <div class="mt-5 d-flex  justify-content-center align-items-center">
                             <img src="./public/assets/Logo/logo_verdePreto.svg" alt="logo sigeduc" class="img-fluid card-img w-50" srcset="">
@@ -48,32 +48,51 @@
                                 <label for="exampleInputPassword1" class="form-label text-muted">Senha:</label>
                                 <input type="password" id="exampleInputPassword1">
                             </div>
-                            <button type="submit" class="btn btn-primary entrar">Entrar</button>
+                            <button type="submit" class="btn btn-success entrar">Entrar</button>
                         </form>
 
-                        <a class="esqueci-a-senha" id="esqueciASenha">Esqueci a senha</a>
+                        <a class="esqueci-a-senha">Esqueci a senha</a>
                     </div>
                 </div>
 
 
 
 
-                <div class="col-sm-12 col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h1 class="card-title">SigEduc</h1>
-                            <p class="card-text">Sistema de Gestão Educacional</p>
-                            <a href="./public/pages/login.html" class="btn btn-primary">Entrar</a>
+                <div class="col-sm-12 col-md-4 lateral">
+                    <div class="card row itens_lateral">
+                        <h5 class="text-center  col-12 pt-4 text-success">Cadastros</h5>
+                        <div class="col-sm-4 col-md-4 col-lg-12">
+                            <a href="#" class="d-flex flex-column justify-content-center cadastro">
+                                <img src="./public/assets/Icones/icon_novo_aluno.svg" alt="Adicionar novo aluno" class="img-responsive" >
+                                <span class="align-self-center">Novo aluno</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-12">
+                            <a href="#" class="d-flex flex-column justify-content-center cadastro">
+                                <img src="./public/assets/Icones/icon_professor.svg" alt="Adicionar novo aluno" class="img-responsive" >
+                                <span class="align-self-center">Professor ou Funcionario</span>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-lg-12">
+                            <a href="#" class="d-flex flex-column justify-content-center  cadastro">
+                                <img src="./public/assets/Icones/icone_familia.svg" alt="Adicionar novo aluno" class="img-responsive" >
+                                <span class="align-self-center">Cadastro familiar</span>
+                            </a>
+                       </div>
+                        <div class="links">
+                            <h5 class="text-center text-success">Links Úteis</h5>
+                            <a href="#">Esqueci meu nome de usuário</a>
+                            <a href="#">Recuperar nome de usuário Aluno por CPF</a>
+                            <a href="#">Perdi o e-mail de confirmação de cadastro</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="relative w-[1440px] h-[29px] shrink-0 text-left text-base text-white font-inter">
-        <div class="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] bg-green-200"></div>
+    <footer>
         <div
-            class="absolute h-[51.72%] w-[34.93%] top-[27.59%] right-[1.11%] bottom-[20.69%] left-[63.96%] inline-block">
+            class="text-light container text-end">
             SIGEduc | GPD/SEEC - (84) 3232-1316 -seec-app1.imd.ufrn.br.srv1inst1
             v20220713_1228
         </div>

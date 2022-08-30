@@ -1,5 +1,10 @@
+a:hover{
+    color: #013813 !important;
+    text-decoration: none;
+}
 main{
-    height: 100vh;
+   
+    margin: 5em 0 !important;
 }
 .input{
     display: flex;
@@ -20,20 +25,68 @@ input:focus{
     width: 19em;
     height: 3em;
     padding: 0.5em;
+    
 }
 .entrar{
     width: 261.71px;
     height: 48px;
 }
-
-.esqueci-a-senha{
+.esqueci-a-senha,
+.lateral a{
     color: #02812C;
     margin-top: 1em;
-    
+    margin-bottom: 3rem;
+    text-decoration: none;
+    align-self: center;
+    cursor: pointer;
+}
+.lateral img{
+    align-self: center;
+    max-width: 3em;
+    transition: opacity 0.5s;   
+}
+.lateral img:hover{
+    opacity: 0.5;
+}
+.lateral .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.lateral .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0.4em;
+}
+.lateral .links a{
+    margin: 0.2em 0;
 }
 
-footer{
-    background-color: #009245;
-    display: flex;
-    justify-content: end;
+@media screen and (max-width: 768px){
+    input, .input, .entrar{
+        width: 100%;
+    }
+    .lateral{
+        margin-top: 1em !important;
+    }
+    .lateral .itens_lateral {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+       
+    }
+}
+@media (max-width: 360px){
+    .lateral .itens_lateral {
+        flex-direction: row;
+        align-items: center;
+       
+    }
 }

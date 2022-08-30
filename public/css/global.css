@@ -1,13 +1,22 @@
 @import url('https://rsms.me/inter/inter.css');
 
-html { font-family: 'Inter', sans-serif; }
-
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
+}
+html, body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 body{
     width: vw;
     height: vh;
     background: linear-gradient(90.22deg, #7AC943 -0.3%, #02812C 99.83%);
+}
+footer{
+    background-color: #009245;
+    display: flex;
+    justify-content: end;
 }
