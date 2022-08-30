@@ -30,11 +30,17 @@
             <div class="p-5">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Cadastro de Alunos</h5>
+                      
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
+                            </svg>
+                            <span>Voltar</span>
+                        <h5 class="card-title text-center">Cadastro de Alunos</h5>
+                        <div class="alert alert-danger text-center" role="alert">
+                            O cadastro só será validado se os dados digitados forem iguais aos dados informados no ato da matrícula!
+                          </div>
                         <form action="cadastro_alunos.html" method="POST">
                             <div class="row">
-
-                    
                             <div class="col-sm-12 col-md-6 mb-3">
                                 <label for="nome" class="form-label">Matrícula</label>
                                 <input type="text" class="form-control" id="matricula" name="matricula" placeholder="Matrícula">
@@ -91,6 +97,9 @@
                             </div>
                         </div>
                         </form>
+                        <button type="button" class="btn btn-success">Cadastrar-se</button>
+                        <button type="button" class="btn btn-primary">Cancelar</button>
+
                 </div>
             </div>
     </div>
