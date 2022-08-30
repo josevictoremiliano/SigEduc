@@ -4,7 +4,7 @@ a:hover{
 }
 main{
    
-    margin: 5em 0 !important;
+    margin: 1em 0 !important;
 }
 .input{
     display: flex;
@@ -31,6 +31,7 @@ input:focus{
     width: 261.71px;
     height: 48px;
 }
+
 .esqueci-a-senha,
 .lateral a{
     color: #02812C;
@@ -68,6 +69,13 @@ input:focus{
 .lateral .links a{
     margin: 0.2em 0;
 }
+@media screen and (max-width: 991px) {
+    .itens_lateral{
+        justify-content: center;
+        align-items: center !important;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 768px){
     input, .input, .entrar{
@@ -83,9 +91,16 @@ input:focus{
        
     }
 }
+@media (max-width: 575px){
+    .itens_lateral {
+        flex-direction: row !important;
+        align-items: center;
+       
+    }
+}
 @media (max-width: 360px){
     .lateral .itens_lateral {
-        flex-direction: row;
+        flex-direction: row !important;
         align-items: center;
        
     }

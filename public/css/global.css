@@ -7,16 +7,22 @@ html, body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
+  background: linear-gradient(90.22deg, #7AC943 -0.3%, #02812C 99.83%);
 }
 
-body{
-    width: vw;
-    height: vh;
-    background: linear-gradient(90.22deg, #7AC943 -0.3%, #02812C 99.83%);
+main{
+  height: 100vh !important;
 }
+
 footer{
     background-color: #009245;
     display: flex;
     justify-content: end;
+    width: 100%;
+
+}
+@media screen and (max-width: 991px) {
+    main{
+      height: auto !important;
+    }
 }
