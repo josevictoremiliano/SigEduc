@@ -31,6 +31,9 @@ input:focus{
     width: 261.71px;
     height: 48px;
 }
+.entrar:hover{
+    color: #FFFFFF !important;
+}
 
 .esqueci-a-senha,
 .lateral a{
