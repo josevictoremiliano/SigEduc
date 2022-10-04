@@ -1,8 +1,31 @@
-header toggler-icon{
-    color: white;
+.foto{
+    border-radius: 50% !important;
+    width: auto !important;
     
 }
-header img{
-    height: 3em;
-    padding-left: 1em;
+.foto:hover{
+    background: none !important;
 }
+.ph-user{
+    color: white;
+    font-size: 50px;
+}
+.dados{
+    font-size: smaller;
+}
+li{
+    width: 100%;
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    color: white !important;
+}
+li a:hover{
+    background: #f1f1f1 !important;
+    color: #000 !important;
+}
+li i{
+    font-size: 20px;
+}
+
