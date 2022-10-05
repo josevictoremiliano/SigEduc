@@ -47,4 +47,43 @@ sidebar-nav i{
     padding: 0;
     margin: 0;
 }
+/*Quadro de aulas*/
+.calendario-atividades { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:100%;
+  
+    border-top: 9px solid #02812C;
+}
 
+.calendario-atividades .calendar{
+    width: 100%;
+    margin: 0;
+    background: #02812C;
+    gap: 3em;
+}
+.calendario-atividades .semana{
+    font-size: 1.5em;
+}
+
+
+.banners .card{
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+    border-top: 9px solid #049c37 !important;
+}
+
+.banners img{
+    cove
+}
+
+
+@media (max-width: 645px) {
+    .calendario-atividades .calendar{
+        gap: 0;
+    }
+    .calendario-atividades .semana{
+        font-size: 1em !important;
+    }
+
+}
