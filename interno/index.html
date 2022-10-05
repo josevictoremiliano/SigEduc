@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../public/assets/Logo/logo_verdeBranco.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../public/css/global.css">
     <link rel="stylesheet" href="../public/css/interno/index.css">
+    <link rel="stylesheet" href="../public/css/global.css">
     <script src="https://unpkg.com/phosphor-icons"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -17,57 +17,39 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success shadow-lg">
-                <div class="d-flex flex-column align-items-center align-items-sm-start justify-content-center px-3 pt-2 text-white min-vh-100">
-                    <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center">
-   
-                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+            <div class="col-auto px-0 ">
+                <div id="sidebar" class="collapse collapse-horizontal show shadow-lg">
+                    <div id="sidebar-nav" class="flex-column d-flex  border-0 rounded-0 text-sm-start min-vh-100 bg-success  text-decoration-none">
+                        <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center">
                         <li class="nav-item text-center d-flex flex-column">
                             <a href="/interno/" class="nav-link text-center w-100 foto">
                                 <i class="bi ph-user"></i>
                             </a>
-                            <div class="dados">
-                                Fulano Fulaninho Fulanal
-                                fulanofulaninho@gmail.com
+                            <div class="dados d-flex flex-column text-white">
+                                <span class="nome">Nome do usuário</span>
+                                <span class="email">fulanofulaninho@gmail.com</span>
                             </div>
                         </li>
-                        <hr class="w-100">
-                        <li class="nav-item">
-                            <a href="/interno/" class="nav-link align-middle px-0">
-                                <i class="ph-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/interno/" class="nav-link align-middle px-0">
-                                <i class="ph-book-bookmark"></i><span class="ms-1 d-none d-sm-inline">Disciplinas</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/interno/" class="nav-link align-middle px-0">
-                                <i class="ph-chats"></i><span class="ms-1 d-none d-sm-inline">Mensagens</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/interno/" class="nav-link align-middle px-0">
-                                <i class="ph-notepad"></i><span class="ms-1 d-none d-sm-inline">Boletins</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/interno/" class="nav-link align-middle px-0">
-                                <i class="ph-books"></i><span class="ms-1 d-none d-sm-inline">Material didático</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/" class="nav-link align-middle px-0">
-                                <i class="ph-sign-out"></i></i><span class="ms-1 d-none d-sm-inline">Sair</span>
-                            </a>
-                        </li>
-                        
-                    </ul>
+                        <hr class="w-100 py-6 text-white ">
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-house"></i><span class="ms-1 d-none d-sm-inline">Home </a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-book-bookmark"></i><span class="ms-1 d-none d-sm-inline">Disciplinas</span></a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-chats"></i><span class="ms-1 d-none d-sm-inline">Mensagens</span></a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-notepad"></i><span class="ms-1 d-none d-sm-inline">Boletins</span></a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-books"></i><span class="ms-1 d-none d-sm-inline">Material didático</span></a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-sign-out"></i></i><span class="ms-1 d-none d-sm-inline">Sair</span></a>
+                    </div>
                 </div>
             </div>
-            <main class="col py-3  d-flex flex-column justify-content-center align-items-center">
-
+            
+            <main class="col d-flex flex-column p-0">
+                <header class="header d-flex align-items-center gap-2">
+                    <a href="/interno/" onclick="click()" data-bs-target="#sidebar" data-bs-toggle="collapse" class="p-1 text-decoration-none"><i class="ph ph-list bi-lg py-2 p-1 fw-bold fs-3 text-white"></i></a>
+                    <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center logo">
+                </header>
+                <section class="title">
+                    <h1 class="text-black-50">Bem-vindo Fulano Fulaninho Fulanal!</h1>
+                    <h5 class="text-muted">Sábado, 23 de Julho de 2022</h5>
+                </section>
        
             </main>
         </div>
@@ -78,5 +60,4 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-
 </html>

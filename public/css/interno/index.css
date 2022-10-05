@@ -1,9 +1,12 @@
+html, body{
+    background: white !important;
+}
 .foto{
     border-radius: 50% !important;
     width: auto !important;
     
 }
-.foto:hover{
+#sidebar-nav .foto:hover{
     background: none !important;
 }
 .ph-user{
@@ -13,19 +16,35 @@
 .dados{
     font-size: smaller;
 }
-li{
-    width: 100%;
-    padding: 5px;
+#sidebar-nav{
+    padding: 0px 1em ;
+    gap: 0.5em;
 }
-li a{
+#sidebar-nav a{
     text-decoration: none;
     color: white !important;
+    font-size: 1em;
+    padding: 0.5em 0.5em;
 }
-li a:hover{
+#sidebar-nav a:hover{
+
+    border-radius: 6px;
     background: #f1f1f1 !important;
     color: #000 !important;
 }
-li i{
+sidebar-nav i{
     font-size: 20px;
+}
+.header{
+    background: #02812C;
+    color: white;
+    padding: 0.5em 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+.logo{
+    height: 50px;
+    padding: 0;
+    margin: 0;
 }
 
