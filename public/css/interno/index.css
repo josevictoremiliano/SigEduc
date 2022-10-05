@@ -1,6 +1,9 @@
 html, body{
     background: white !important;
 }
+.full{
+    height: 100vh !important;
+}
 .foto{
     border-radius: 50% !important;
     width: auto !important;
@@ -66,13 +69,16 @@ sidebar-nav i{
     font-size: 1.5em;
 }
 
-.banners{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1em;
-    margin: 1em 0;
 
+/*Criar um grid de 3 colunas  responsivo  para baner*/
+.banners{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1em;
+    border-radius: 10px;
+    padding: 1em;
+    height: 100%;
 }
 
 .banners .card{
@@ -101,7 +107,18 @@ sidebar-nav i{
     border: #000 solid 1px;
 }
 
-@media (max-width: 645px) {
+@media screen and (max-width: 878px) {
+    .banners{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 707px) {
+    .banners{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
     .calendario-atividades .calendar{
         gap: 0;
     }

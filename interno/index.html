@@ -17,9 +17,9 @@
 <body>
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto px-0 ">
+            <div class="col-auto px-0  full">
                 <div id="sidebar" class="collapse collapse-horizontal show shadow-lg">
-                    <div id="sidebar-nav" class="flex-column d-flex  border-0 rounded-0 text-sm-start min-vh-100 bg-success  text-decoration-none">
+                    <div id="sidebar-nav" class="flex-column d-flex  border-0 rounded-0 text-sm-start min-vh-100 bg-success h-100 text-decoration-none">
                         <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center">
                         <li class="nav-item text-center d-flex flex-column">
                             <a href="/interno/" class="nav-link text-center w-100 foto">
@@ -36,7 +36,7 @@
                         <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-chats"></i><span class="ms-1 d-none d-sm-inline">Mensagens</span></a>
                         <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-notepad"></i><span class="ms-1 d-none d-sm-inline">Boletins</span></a>
                         <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-books"></i><span class="ms-1 d-none d-sm-inline">Material didático</span></a>
-                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-sign-out"></i></i><span class="ms-1 d-none d-sm-inline">Sair</span></a>
+                        <a href="../index.html" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-sign-out"></i></i><span class="ms-1 d-none d-sm-inline">Sair</span></a>
                     </div>
                 </div>
             </div>
@@ -74,35 +74,38 @@
                            
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Notícias</h5>
+                                    <h5 class="card-title align-items-center d-flex gap-2"><i class="ph-globe-hemisphere-west"></i>Notícias</h5>
                                     <p class="card-text text-danger pt-4">Nenhuma notícia</p>
                                     <a href="#" class="btn btn-success">Ver mais</a>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title mb-4">Mensagens</h5>
+                                    <h5 class="card-title mb-4  gap-2 align-items-center d-flex"><i class="ph-chats"></i> Mensagens</h5>
                                     <a href="./mensagens.html" class="text-decoration-none">
-                                        <div class=" my-3 mensagem gap-3 d-flex  justify-content-center align-items-center">
-                                            <div class="foto">
-                                                <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="logo" class="align-self-center">
-                                            </div>
-                                            <div class="dados d-flex flex-column justify-content-center align-items-start">
-                                                <span class="nome fw-bold">Fulano</span>
-                                                <span class="email">
-                                                    <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                                                </span>
-                                            </div>
+                                        <div class=" my-3 mensagem gap-3 d-flex flex-column ">
+                                            <span class="nome fw-bold">Cibele Feres</span>
+                                            <span class="email">
+                                                <div class="text-truncate text-nowrap text-reset">Lorem idivum dolor sit amet...</div>
+                                            </span>
                                         </div>
-                                    </a>                                    
+                                    </a>   
+                                    <a href="./mensagens.html" class="text-decoration-none">
+                                        <div class=" my-3 mensagem gap-3 d-flex flex-column ">
+                                            <span class="nome fw-bold">Derik Woerd</span>
+                                            <span class="email">
+                                                <div class="text-truncate text-nowrap text-reset">Lorem idivum dolor sit amet...</div>
+                                            </span>
+                                        </div>
+                                    </a>                                  
                                     
 
-                                    <a href="#" class="btn btn-success">Ver todas</a>
+                                    <a href="./mensagens.html" class="btn btn-success">Ver todas</a>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">Atividades pendentes</h5>
+                                    <h5 class="card-title gap-2 align-items-center d-flex"> <i class="ph-alarm"></i> Atividades pendentes</h5>
                                     <p class="card-text pt-4 text-danger">Nenhuma atividade encontrada</p>
                                     <a href="#" class="btn btn-success">Ver mais</a>
                                 </div>
