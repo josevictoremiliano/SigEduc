@@ -107,6 +107,27 @@ sidebar-nav i{
     border: #000 solid 1px;
 }
 
+/*mensagens.html*/
+.box-mensagem a{
+    background: #9ffcbe;
+    padding: 0.5em;
+    border-radius: 10px;
+    cursor: pointer !important;
+    transition: color, background 0.5s;
+}
+.box-mensagem a::before{
+    background: #bdffd3;
+    padding: 0.5em;
+    border-radius: 10px;
+    cursor: pointer !important;
+}
+
+.box-mensagem a:hover{
+    background: #049c37;
+    color: white !important;
+    
+}
+
 @media screen and (max-width: 878px) {
     .banners{
         grid-template-columns: 1fr 1fr;

@@ -50,98 +50,120 @@
                         <div class="bar">
                             <h1 class="text-white">Mensagens</h1>
                         </div>
-                        <div class="container">
+                        <div class="container pb-5">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="list-group" id="list-tab" role="tablist">
                                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">Caixa de entrada</a>
-                                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Enviados</a>
-                                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Rascunhos</a>
-                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Lixeira</a>
+                                        <a class="list-group-item list-group-item-action" id="list-send-list" data-bs-toggle="list" href="#list-send" role="tab" aria-controls="send">Enviados</a>
+                                        <a class="list-group-item list-group-item-action" id="list-rascunhos-list" data-bs-toggle="list" href="#list-rascunhos" role="tab" aria-controls="rascunhos">Rascunhos</a>
+                                        <a class="list-group-item list-group-item-action" id="list-trashcan-list" data-bs-toggle="list" href="#list-trashcan" role="tab" aria-controls="trashcan">Lixeira</a>
                                     </div>
                                 </div>
                                 <div class="col-9">
                                     <div class="tab-content" id="nav-tabContent">
                                         <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                                            <div class="card">
-                                                <div class="card-header">
-                                                    <h5 class="card-title">Caixa de entrada</h5>
-                                                </div>
-                                                <div class="card-body">
-                                                    <div class="row">
-                                                                                                  
-                                                            <div class="container">
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <div class="card">
-                                                                            <div class="card-body">
-                                                                                <div class="row">
-                                                                                    <div class="col-12">
-                                                                                        <div class="d-flex justify-content-between align-items-center">
-                                                                                            <div class="d-flex justify-content-between align-items-center">
-                                                                                                <div class="mr-2">
-                                                                                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
-                                                                                                </div>
-                                                                                                <div class="ml-2">
-                                                                                                    <div class="h5 m-0">Nome do remetente</div>
-                                                                                                    <div class="h7 text-muted">Mensagem</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div>
-                                                                                                <div class="dropdown">
-                                                                                                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                        <i class="fa fa-ellipsis-h"></i>
-                                                                                                    </button>
-                                                                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                                                                        <a class="dropdown-item" href="#">Excluir</a>
-                                                                                                        <a class="dropdown-item" href="#">Marcar como lida</a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-12">
-                                                                        <div class="card">
-                                                                            <div class="card-body">
-                                                                                <div class="row">
-                                                                                    <div class="col-12">
-                                                                                        <div class="d-flex justify-content-between align-items-center">
-                                                                                            <div class="d-flex justify-content-between align-items-center">
-                                                                                                <div class="mr-2">
-                                                                                                    <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
-                                                                                                </div>
-                                                                                                <div class="ml-2">
-                                                                                                    <div class="h5 m-0">Nome do remetente</div>
-                                                                                                    <div class="h7 text-muted">Mensagem</div>
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <div>
-                                                                                                <div class="dropdown">
-                                                                                                    <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                                                        <i class="fa fa-ellipsis-h"></i>
-                                                                                                    </button>
-                                                                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-                                                                                                        <a class="dropdown-item" href="#">Excluir</a>
-                                                                                                        <a class="dropdown-item" href="#">Marcar como lida</a>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                
-                                                                                            
-                                                                                            
-                                                        </div>
-                                                        </div>
+                                            <!--Email responsivo com selecte, remetente, titulo, assunto e data sem usar card-->
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
+                                                            <span class="remetente fw-bold">Remetente</span>
+                                                            <span class="titulo fw-bold">Titulo</span>
+                                                            <span class="assunto">Assunto</span>
+                                                            <span class="data">Data</span>
+                                                        </label>
                                                     </div>
                                                 </div>
                                             </div>
+                                            <hr>
+                                            <div class="row d-flex flex-column gap-3 box-mensagem">
+                                                <a class="col-12 text-decoration-none text-black">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault" >
+                                                            <span class="remetente fw-bold">Coordenadoria Geral</span>
+                                                            <span class="titulo fw-bold">Notas</span>
+                                                            <span class="assunto text-truncate">Vimos seu chamado sobre as notas da matéria</span>
+                                                            <span class="data">05/10/2022</span>
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                                <a class="col-12 text-decoration-none text-black">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault" >
+                                                            <span class="remetente fw-bold">Coordenadoria Geral</span>
+                                                            <span class="titulo fw-bold">Notas</span>
+                                                            <span class="assunto text-truncate">Vimos seu chamado sobre as notas da matéria</span>
+                                                            <span class="data">05/10/2022</span>
+                                                        </label>
+                                                    </div>
+                                                </a>
+                                                <a class="col-12 text-decoration-none text-black">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault" >
+                                                            <span class="remetente fw-bold">Coordenadoria Geral</span>
+                                                            <span class="titulo fw-bold">Notas</span>
+                                                            <span class="assunto text-truncate">Vimos seu chamado sobre as notas da matéria</span>
+                                                            <span class="data">05/10/2022</span>
+                                                        </label>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+                                           
                                         </div>
-                                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
-                                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                                        <div class="tab-pane fade" id="list-send" role="tabpanel" aria-labelledby="list-send-list">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
+                                                            <span class="remetente fw-bold">Remetente</span>
+                                                            <span class="titulo fw-bold">Titulo</span>
+                                                            <span class="assunto">Assunto</span>
+                                                            <span class="data">Data</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="tab-pane fade" id="list-rascunhos" role="tabpanel" aria-labelledby="list-rascunhos-list">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
+                                                            <span class="remetente fw-bold">Remetente</span>
+                                                            <span class="titulo fw-bold">Titulo</span>
+                                                            <span class="assunto">Assunto</span>
+                                                            <span class="data">Data</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <div class="tab-pane fade" id="list-trashcan" role="tabpanel" aria-labelledby="list-trashcan-list">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
+                                                            <span class="remetente fw-bold">Remetente</span>
+                                                            <span class="titulo fw-bold">Titulo</span>
+                                                            <span class="assunto">Assunto</span>
+                                                            <span class="data">Data</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
 
                                     </div>
                                 </div>
