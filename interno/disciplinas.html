@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/assets/Logo/logo_verdeBranco.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/interno/index.css">
+    <link rel="stylesheet" href="../public/css/global.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>SigEduc</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto px-0  full">
+                <div id="sidebar" class="collapse collapse-horizontal none shadow-lg">
+                    <div id="sidebar-nav"
+                        class="flex-column d-flex  border-0 rounded-0 text-sm-start min-vh-100 bg-success h-100 text-decoration-none">
+                        <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center">
+                        <li class="nav-item text-center d-flex flex-column">
+                            <a href="/interno/" class="nav-link text-center w-100 foto">
+                                <i class="bi ph-user"></i>
+                            </a>
+                            <div class="dados d-flex flex-column text-white">
+                                <span class="nome">Fulano Fulaninho</span>
+                                <span class="email">fulanofulaninho@gmail.com</span>
+                            </div>
+                        </li>
+                        <hr class="w-100 py-6 text-white ">
+                        <a href="/interno/" class="border-end-0 d-inline-block text-truncate"
+                            data-bs-parent="#sidebar"><i class="ph-house"></i><span class="ms-1 d-sm-inline">Home </a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i
+                                class="ph-book-bookmark"></i><span class="ms-1 d-sm-inline">Disciplinas</span></a>
+                        <a href="./mensagens.html" class="border-end-0 d-inline-block text-truncate"
+                            data-bs-parent="#sidebar"><i class="ph-chats"></i><span
+                                class="ms-1 d-sm-inline">Mensagens</span></a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i
+                                class="ph-notepad"></i><span class="ms-1 d-sm-inline">Boletins</span></a>
+                        <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i
+                                class="ph-books"></i><span class="ms-1 d-sm-inline">Material didático</span></a>
+                        <a href="../index.html" class="border-end-0 d-inline-block text-truncate"
+                            data-bs-parent="#sidebar"><i class="ph-sign-out"></i></i><span
+                                class="ms-1 d-sm-inline">Sair</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <main class="col d-flex flex-column p-0">
+                <header class="header d-flex align-items-center gap-2">
+                    <a href="/interno/" onclick="click()" data-bs-target="#sidebar" data-bs-toggle="collapse"
+                        class="p-1 text-decoration-none"><i
+                            class="ph ph-list bi-lg py-2 p-1 fw-bold fs-3 text-white"></i></a>
+                    <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center logo">
+                </header>
+                <section class="p-5">
+                    <div class="shadow-lg w-100 bg-light">
+                        <div class="bar">
+                            <h3 class="text-black py-5 px-5">Minhas diciplinas</h3>
+                        </div>
+                        <div class="container pb-5">
+                            <div class="row d-flex gap-3">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="card-title">Matemática</h5>
+                                                    <p class="card-text">Professor Fulano</p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">1º ano</p>
+                                                    <p class="card-text">1º semestre</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                            
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">Segunda: 19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <hr>
+                                        <div class="card-body align-self-end ">
+                                            <a href="#" class="btn btn-success">Acessar disciplina</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="card-title">Filosofia</h5>
+                                                    <p class="card-text">Professor Geraldo</p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">1º ano</p>
+                                                    <p class="card-text">1º semestre</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                              
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">Segunda: 19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="card-body align-self-end ">
+                                            <a href="#" class="btn btn-success">Acessar disciplina</a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="card-title">História</h5>
+                                                    <p class="card-text">Professor Júlio</p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">1º ano</p>
+                                                    <p class="card-text">1º semestre</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                             
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">Terça: 19:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="card-body align-self-end ">
+                                            <a href="#" class="btn btn-success">Acessar disciplina</a>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex flex-column">
+                                                    <h5 class="card-title">Design</h5>
+                                                    <p class="card-text">Professor Ari</p>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">1º ano</p>
+                                                    <p class="card-text">1º semestre</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                              
+                                                <div class="d-flex flex-column">
+                                                    <p class="card-text">Quarta: 20:00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="card-body align-self-end ">
+                                            <a href="#" class="btn btn-success">Acessar disciplina</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+</html>
