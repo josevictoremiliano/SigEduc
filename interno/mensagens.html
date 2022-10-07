@@ -42,22 +42,30 @@
             
             <main class="col d-flex flex-column p-0">
                 <header class="header d-flex align-items-center gap-2">
-                    <a href="/interno/" onclick="click()" data-bs-target="#sidebar" data-bs-toggle="collapse" class="p-1 text-decoration-none"><i class="ph ph-list bi-lg py-2 p-1 fw-bold fs-3 text-white"></i></a>
+                    <a href="/interno/" data-bs-target="#sidebar" data-bs-toggle="collapse" class="p-1 text-decoration-none"><i class="ph ph-list bi-lg py-2 p-1 fw-bold fs-3 text-white"></i></a>
                     <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center logo">
                 </header>
                 <section class="p-5">
                     <div class="shadow-lg w-100">
                         <div class="bar">
-                            <h1 class="text-white">Mensagens</h1>
+                            <h1 class="py-4 text-center">Caixa de mensagens</h1>
                         </div>
                         <div class="container pb-5">
                             <div class="row">
                                 <div class="col-3">
                                     <div class="list-group" id="list-tab" role="tablist">
-                                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">Caixa de entrada</a>
-                                        <a class="list-group-item list-group-item-action" id="list-send-list" data-bs-toggle="list" href="#list-send" role="tab" aria-controls="send">Enviados</a>
-                                        <a class="list-group-item list-group-item-action" id="list-rascunhos-list" data-bs-toggle="list" href="#list-rascunhos" role="tab" aria-controls="rascunhos">Rascunhos</a>
-                                        <a class="list-group-item list-group-item-action" id="list-trashcan-list" data-bs-toggle="list" href="#list-trashcan" role="tab" aria-controls="trashcan">Lixeira</a>
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                                            <i class="ph-tray"></i> <div class="text-occult"> Caixa de entrada </div>
+                                        </a>
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action" id="list-send-list" data-bs-toggle="list" href="#list-send" role="tab" aria-controls="send">
+                                            <i class="ph-paper-plane-tilt"></i> <div class="text-occult">Enviados </div> 
+                                        </a>
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action" id="list-rascunhos-list" data-bs-toggle="list" href="#list-rascunhos" role="tab" aria-controls="rascunhos">
+                                            <i class="ph-newspaper-clipping"></i> <div class="text-occult">Rascunhos</div> 
+                                        </a>
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action" id="list-trashcan-list" data-bs-toggle="list" href="#list-trashcan" role="tab" aria-controls="trashcan">
+                                            <i class="ph-trash"></i> <div class="text-occult">Lixeira</div>
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-9">

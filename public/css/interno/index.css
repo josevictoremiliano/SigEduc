@@ -70,7 +70,6 @@ sidebar-nav i{
 }
 
 
-/*Criar um grid de 3 colunas  responsivo  para baner*/
 .banners{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -128,10 +127,22 @@ sidebar-nav i{
     
 }
 
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #049c37 !important;
+    border-color: #049c37   !important;
+}
+
+
+
 @media screen and (max-width: 878px) {
     .banners{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .text-occult{
+        display: none;
     }
 }
 
