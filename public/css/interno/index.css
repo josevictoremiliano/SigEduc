@@ -107,6 +107,9 @@ sidebar-nav i{
 }
 
 /*mensagens.html*/
+.fundo-msg{
+    min-height: 690px !important;
+}
 .box-mensagem a{
     background: #9ffcbe;
     padding: 0.5em;
@@ -136,16 +139,36 @@ sidebar-nav i{
 
 
 
-@media screen and (max-width: 878px) {
+
+@media screen and (max-width: 879px) {
     .banners{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
+
+   
+}
+
+@media screen and (max-width: 768px) {
     .text-occult{
         display: none;
     }
+    .action{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-around !important;
+        margin-bottom: 1em !important;
+    }
+    
+    .action a{
+        background: #9ffcbe;
+        padding: 1em;
+        border-radius: 16px !important;
+        cursor: pointer !important;
+        transition: color, background 0.5s;
+    }
+   
 }
-
 @media (max-width: 707px) {
     .banners{
         grid-template-columns: 1fr;

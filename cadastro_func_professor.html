@@ -37,10 +37,12 @@
                         <span>Voltar</span>
                     </a>
                     
-                    <h5 class="card-title text-center pb-3">Cadastro de Alunos</h5>
+                    <h5 class="card-title text-center pb-3">Cadastro de professores/funcionários</h5>
                     <div class="alert alert-danger text-center" role="alert">
                         O cadastro só será validado se os dados digitados forem iguais aos dados informados no ato da matrícula!
                     </div>
+
+                    
                     <form action="cadastro_alunos.html" method="POST">
                         <div class="row pt-3">
                         <div class="col-sm-12 col-md-6 mb-3">
@@ -48,15 +50,15 @@
                             <input type="text" class="form-control" id="matricula" name="matricula" placeholder="Matrícula">
                         </div>
                         <div class="col-sm-12 col-md-6 mb-3">
-                            <label for="nome" class="form-label ">Nome</label>
+                            <label for="nome" class="form-label ">Nome completo:</label>
                             <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                         </div>
                         
                         
                         
                         <div class="col-sm-12 col-md-6 mb-3">
-                            <label for="sobrenome" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control" id="sobrenome" name="sobrenome" placeholder="Sobrenome">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                         </div>
                         <div class="col-sm-12 col-md-6 mb-3">
                             <label for="data_nascimento" class="form-label">Data de Nascimento</label>
@@ -73,22 +75,19 @@
                             <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
                         </div>
                         <div class="col-sm-12 col-md-6 mb-3">
+                            <label for="nome_mae" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Telefone">
+                        </div>
+                        <div class="col-sm-12 col-md-6 mb-3">
                             <label for="rg" class="form-label">RG</label>
                             <input type="text" class="form-control" id="rg" name="rg" placeholder="RG">
                         </div>
-                        <div class="col-sm-12 col-md-6 mb-3">
-                            <label for="nome_mae" class="form-label">Nome da Mãe</label>
-                            <input type="text" class="form-control" id="nome_mae" name="nome_mae" placeholder="Nome da Mãe">
-                        </div>
+                   
                         <div class="col-sm-12 col-md-6 mb-3">
                             <label for="cpf" class="form-label">CPF</label>
                             <input type="text" class="form-control" id="cpf" name="cpf" placeholder="CPF">
                         </div>
-                        <div class="col-sm-12 col-md-6 mb-3">
-                            <label for="telefone" class="form-label">Nome de usuário</label>
-                            <input type="text" class="form-control" id="user" name="user" placeholder="Nome de usuário">
-                        </div>
-
+                    
                         <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
                             <label for="telefone" class="form-label">Senha</label>
                             <input type="text" class="form-control" id="Senha" name="Senha" placeholder="Senha">

@@ -46,75 +46,75 @@
                     <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center logo">
                 </header>
                 <section class="p-5">
-                    <div class="shadow-lg w-100">
+                    <div class="shadow-lg w-100 p-3 fundo-msg">
                         <div class="bar">
                             <h1 class="py-4 text-center">Caixa de mensagens</h1>
                         </div>
                         <div class="container pb-5">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="list-group" id="list-tab" role="tablist">
-                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">
-                                            <i class="ph-tray"></i> <div class="text-occult"> Caixa de entrada </div>
+                                <div class="col-sm-12 col-md-3">
+                                    <div class="list-group action" id="list-tab" role="tablist">
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center w-auto list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="home">
+                                            <i class="ph-tray"></i> <div class="text-truncate text-occult"> Caixa de entrada </div>
                                         </a>
-                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action" id="list-send-list" data-bs-toggle="list" href="#list-send" role="tab" aria-controls="send">
-                                            <i class="ph-paper-plane-tilt"></i> <div class="text-occult">Enviados </div> 
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center w-auto list-group-item list-group-item-action" id="list-send-list" data-bs-toggle="list" href="#list-send" role="tab" aria-controls="send">
+                                            <i class="ph-paper-plane-tilt"></i> <div class="text-truncate text-occult">Enviados </div> 
                                         </a>
-                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action" id="list-rascunhos-list" data-bs-toggle="list" href="#list-rascunhos" role="tab" aria-controls="rascunhos">
-                                            <i class="ph-newspaper-clipping"></i> <div class="text-occult">Rascunhos</div> 
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center w-auto list-group-item list-group-item-action" id="list-rascunhos-list" data-bs-toggle="list" href="#list-rascunhos" role="tab" aria-controls="rascunhos">
+                                            <i class="ph-newspaper-clipping"></i> <div class="text-truncate text-occult">Rascunhos</div> 
                                         </a>
-                                        <a class=" d-flex gap-2 justify-content-start align-items-center list-group-item list-group-item-action" id="list-trashcan-list" data-bs-toggle="list" href="#list-trashcan" role="tab" aria-controls="trashcan">
-                                            <i class="ph-trash"></i> <div class="text-occult">Lixeira</div>
+                                        <a class=" d-flex gap-2 justify-content-start align-items-center w-auto list-group-item list-group-item-action" id="list-trashcan-list" data-bs-toggle="list" href="#list-trashcan" role="tab" aria-controls="trashcan">
+                                            <i class="ph-trash"></i> <div class="text-truncate text-occult">Lixeira</div>
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-9">
+                                <div class="col-sm-12 col-md-9">
                                     <div class="tab-content" id="nav-tabContent">
-                                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                                        <div class="tab-pane fade show active p-3" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
                                             <!--Email responsivo com selecte, remetente, titulo, assunto e data sem usar card-->
-                                            <div class="row">
-                                                <div class="col-12">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                        <label class="form-check-label d-flex justify-content-between" for="flexCheckDefault">
-                                                            <span class="remetente fw-bold">Remetente</span>
-                                                            <span class="titulo fw-bold">Titulo</span>
-                                                            <span class="assunto">Assunto</span>
-                                                            <span class="data">Data</span>
-                                                        </label>
-                                                    </div>
+                                            
+                                            <div class="col-12 ">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label d-flex justify-content-between gap-2" for="flexCheckDefault">
+                                                        <span class="remetente fw-bold text-truncate">Remetente</span>
+                                                        <span class="titulo fw-bold text-truncate ">Titulo</span>
+                                                        <span class="assunto text-truncate">Assunto</span>
+                                                        <span class="data text-truncate">Data</span>
+                                                    </label>
                                                 </div>
                                             </div>
+                                            
                                             <hr>
                                             <div class="row d-flex flex-column gap-3 box-mensagem">
                                                 <a class="col-12 text-decoration-none text-black">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault">
-                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault" >
-                                                            <span class="remetente fw-bold">Coordenadoria Geral</span>
-                                                            <span class="titulo fw-bold">Notas</span>
+                                                    <div class="form-check ">
+                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault1">
+                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault1" >
+                                                            <span class="remetente fw-bold text-truncate">Coordenadoria Geral</span>
+                                                            <span class="titulo fw-bold px-1">Notas</span>
                                                             <span class="assunto text-truncate">Vimos seu chamado sobre as notas da matéria</span>
-                                                            <span class="data">05/10/2022</span>
+                                                            <span class="data  ms-1">05/10/2022</span>
                                                         </label>
                                                     </div>
                                                 </a>
                                                 <a class="col-12 text-decoration-none text-black">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault">
-                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault" >
-                                                            <span class="remetente fw-bold">Coordenadoria Geral</span>
-                                                            <span class="titulo fw-bold">Notas</span>
+                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault2">
+                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault2" >
+                                                            <span class="remetente fw-bold text-truncate">Coordenadoria Geral</span>
+                                                            <span class="titulo fw-bold px-1">Notas</span>
                                                             <span class="assunto text-truncate">Vimos seu chamado sobre as notas da matéria</span>
-                                                            <span class="data">05/10/2022</span>
+                                                            <span class="data">25/12/2022</span>
                                                         </label>
                                                     </div>
                                                 </a>
                                                 <a class="col-12 text-decoration-none text-black">
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault">
-                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault" >
-                                                            <span class="remetente fw-bold">Coordenadoria Geral</span>
-                                                            <span class="titulo fw-bold">Notas</span>
+                                                        <input class="form-check-input" type="checkbox" value="" for="flexCheckDefault3">
+                                                        <label class="form-check-label d-flex justify-content-between" id="flexCheckDefault3" >
+                                                            <span class="remetente fw-bold text-truncate">Coordenadoria Geral</span>
+                                                            <span class="titulo fw-bold px-2">Notas</span>
                                                             <span class="assunto text-truncate">Vimos seu chamado sobre as notas da matéria</span>
                                                             <span class="data">05/10/2022</span>
                                                         </label>
