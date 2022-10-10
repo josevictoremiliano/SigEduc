@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../public/assets/Logo/logo_verdeBranco.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../public/css/interno/index.css">
+    <link rel="stylesheet" href="../public/css/global.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>SigEduc</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto px-0  full">
+                <div id="sidebar" class="collapse collapse-horizontal none shadow-lg">
+                    <div id="sidebar-nav" class="flex-column d-flex  border-0 rounded-0 text-sm-start min-vh-100 bg-success h-100 text-decoration-none" >
+                        <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center">
+                        <li class="nav-item text-center d-flex flex-column">
+                            <a href="/interno/" class="nav-link text-center w-100 foto">
+                                <i class="bi ph-user"></i>
+                            </a>
+                            <div class="dados d-flex flex-column text-white">
+                                <span class="nome">Fulano Fulaninho</span>
+                                <span class="email">fulanofulaninho@gmail.com</span>
+                            </div>
+                        </li>
+                        <hr class="w-100 py-6 text-white ">
+                        <a href="/SigEduc/interno/" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-house"></i><span class="ms-1 d-sm-inline">Home </a>
+                            <a href="./disciplinas.html" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-book-bookmark"></i><span class="ms-1 d-sm-inline">Disciplinas</span></a>
+                            <a href="./mensagens.html" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-chats"></i><span class="ms-1 d-sm-inline">Mensagens</span></a>
+                            <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-notepad" disabled></i><span class="ms-1 d-sm-inline">Boletins</span></a>
+                            <a href="#" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-books" disabled></i><span class="ms-1 d-sm-inline">Material didático</span></a>
+                            <a href="../index.html" class="border-end-0 d-inline-block text-truncate" data-bs-parent="#sidebar"><i class="ph-sign-out"></i></i><span class="ms-1 d-sm-inline">Sair</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <main class="col d-flex flex-column p-0">
+                <header class="header d-flex align-items-center gap-2">
+                    <a href="/interno/" data-bs-target="#sidebar" data-bs-toggle="collapse" class="p-1 text-decoration-none"><i class="ph ph-list bi-lg py-2 p-1 fw-bold fs-3 text-white"></i></a>
+                    <img src="../public/assets/Logo/interno.png" alt="logo" class="align-self-center logo">
+                </header>
+                <section class="p-5">
+                    <div class="shadow-lg w-100 p-3 fundo-msg">
+                        <a href="./mensagens.html" class="btn btn-success"><i class="ph-arrow-left gap-2 align-items-center"> Voltar</i></a>
+
+                        <div class="bar">
+                            <h1 class="py-4 text-center">Mensagem</h1>
+                        </div>
+                        <div class="container pb-5">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="mr-2 pe-2">
+                                                <img class="rounded-circle" width="45" src="https://picsum.photos/50/50" alt="">
+                                            </div>
+                                            <div class="ml-2">
+                                                <div class="h5 m-0">Coordenadoria Geral</div>
+                                                <div class="h7 text-muted">Remetente</div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="bi bi-three-dots-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <li><a class="dropdown-item" href="#">Responder</a></li>
+                                                    <li><a class="dropdown-item" href="#">Encaminhar</a></li>
+                                                    <li><a class="dropdown-item" href="#">Excluir</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-muted h7 mb-2"> <i class="bi bi-clock"></i> 10 minutos atrás</div>
+                                    <a class="card-link text-decoration-none text-success">
+                                        <h5 class="card-title">Notas do segundo semestre</h5>
+                                    </a>
+                                    <p class="card-text my-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut aliquam aliquam, nunc nunc aliquet nunc, eget aliquam nunc justo sit amet elit. Sed euismod, nunc ut aliquam aliquam, nunc nunc aliquet nunc, eget aliquam nunc justo sit amet elit.
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link"><i class="bi bi-reply"></i> Responder</a>
+                                    <a href="#" class="card-link"><i class="bi bi-share"></i> Encaminhar</a>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </section>
+       
+            </main>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>
