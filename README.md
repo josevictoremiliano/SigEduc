@@ -1,6 +1,7 @@
 # SigEduc
 Este Repositorio foi criado na matéria Projeto de Interface do Usuário ofertada pelo IFRN-SPP e orquestrada pelo professor Ari Barreto de Oliveira.
 
+Feito por Amanda Kamylla, josé Victor e Maike Rosa
 
 <hr>
 
